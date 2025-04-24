@@ -1,0 +1,443 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer portfolio</title>
+    <body>
+        <style>
+            html,body{
+                background-color: #000000;
+                margin:0;
+                height:0;
+            }
+            .log nav{
+                background-color:rgb(0, 0, 0);
+                height: 60px;
+                margin: 0px;
+                color: #000000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .log h1{
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 40px;
+                margin: 10px;
+                transition: 0.8s;           
+            }
+            .log h1:hover{
+                color: aqua;
+                font-size: 45px;
+            }
+            .log ul{
+                text-decoration:none;
+                list-style: none;
+                gap: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+            }
+            .hov1 a{
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 18px;
+                transition: 0.5s;
+            }
+            .hov1 a:hover{
+                font-size: 21px;
+                color: aqua;
+            }
+            .bg {
+                margin: 60px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .bg h1{
+                font-size: 40px;
+                padding: 160px;
+            }
+            .bg h1 span{
+                font-size:45px;
+                color: aqua;
+            }
+            .bg img {
+                height: 40%;
+                width: 40%;
+                padding: 200px;
+                padding-top: 0%;
+                padding-bottom: 0%;
+            }
+            .abt{
+                border: 2px solid white;
+                border-radius: 5px;
+                padding: 15px;
+                margin: 400px;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                transition: 0.5s;
+            }
+            .abt:hover{
+                border: 4px solid aqua;
+                box-shadow: 0px 0px 15px aqua;
+                border-radius: 5px;
+                padding: 25px;
+                margin: 400px;
+                margin-top: 50px;
+                margin-bottom: 0px;
+            }
+            .abt h2{
+                color: white;
+            }
+            .edu{
+                border: 2px solid white;
+                border-radius: 5px;
+                padding: 15px;
+                margin: 400px;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                transition: 0.5s;
+            }
+            .edu:hover{
+                border: 4px solid aqua;
+                border-radius: 10px;
+                padding: 25px;
+                margin: 400px;
+                margin-top: 50px;
+                margin-bottom: 0px;
+            }
+            .edu h2{
+                color: white;
+                transition: 0.2s;
+            }
+            .edu h2:hover{
+                color: aqua;
+                box-shadow: 0px 0px 15px aqua;
+            }
+            #e1{
+                color: white;
+            }
+            .skill h2{
+                font-family: sans-serif;
+                color: white;
+            }
+            .skill ul h3{
+                color: white;
+            }
+            #s1{
+                color: white;
+            }
+            .skill{
+                border: 2px solid white;
+                border-radius: 5px;
+                padding: 15px;
+                margin: 400px;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                transition: 0.5s;
+            }
+            .skill:hover{
+                border: 4px solid aqua;
+                box-shadow: 0px 0px 15px aqua;
+                border-radius: 5px;
+                padding: 25px;
+                margin: 400px;
+                margin-top: 50px;
+                margin-bottom: 0px;
+            }
+            .cont{
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid white;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 520px;
+                margin-top: 100px;
+                margin-bottom: 25px;
+                transition: 0.3s;
+            }
+            .cont:hover{
+                border: 2px solid aqua;
+                box-shadow: 0px 0px 15px aqua;
+                border-radius: 10px;
+                padding: 25px;
+                margin: 520px;
+                margin-top: 100px;
+                margin-bottom: 25px;
+            }
+            .cont a img{
+                height: 50px;
+                width: 50px;
+                transition: 0.5s;
+                
+            }
+            .cont a img:hover{
+                height: 70px;
+                width: 70px;
+            } 
+            #i2{
+                color: white;
+                font-family:sans-serif;
+            }
+            .intern{
+                display: flex;
+            }
+            #c1{
+                background-image: url("images/cy.jpeg");
+                height: 70px;
+                width: 180px;
+                border: 1px solid white;
+                padding: 70px;
+                padding-left: 140px;
+                margin: 100px;
+                margin-top: 0px;
+                margin-bottom: 50px;
+                margin-right: 10px;
+                transition: 0.5s;
+            }
+            #c1:hover{
+                background-image: url("images/cy.jpeg");
+                height: 70px;
+                width: 180px;
+                border: 2px solid aqua;
+                box-shadow: 0px 0px 15px aqua;
+                padding: 80px;
+                padding-left: 130px;
+                margin: 100px;
+                margin-top: 0px;
+                margin-bottom: 50px;
+                margin-right: 10px;
+            }
+            #c1 a button{
+                text-decoration: none;
+            }
+            #c2{
+                background-image: url("images/web.jpeg");
+                height: 30px;
+                width: 75px;
+                border: 1px solid white;
+                padding: 70px;
+                padding-left: 140px;
+                margin: 100px;
+                margin-top: 0px;
+                margin-bottom: 50px;
+                margin-right: 10px;
+                transition: 0.5s;
+            }
+            #c2:hover{
+                background-image: url("images/web.jpeg");
+                height: 30px;
+                width: 75px;
+                border: 2px solid aqua;
+                box-shadow: 0px 0px 15px aqua;
+                padding: 80px;
+                padding-left: 130px;
+                margin: 100px;
+                margin-top: 0px;
+                margin-bottom: 50px;
+                margin-right: 10px;
+            }
+            #c3{
+                background-image: url("images/cy.jpeg");
+                height: 70px;
+                width: 180px;
+                border: 1px solid white;
+                padding: 70px;
+                padding-left: 140px;
+                margin: 100px;
+                margin-top: 0px;
+                margin-bottom: 50px;
+                margin-right: 10px;
+                transition: 0.5s;
+            }
+            #c3:hover{
+                background-image: url("images/cy.jpeg");
+                height: 70px;
+                width: 180px;
+                border: 2px solid aqua;
+                box-shadow: 0px 0px 15px aqua;
+                padding: 80px;
+                padding-left: 130px;
+                margin: 100px;
+                margin-top: 0px;
+                margin-bottom: 50px;
+                margin-right: 10px;
+            }
+            .pro{
+                border: 2px solid white;
+                padding: 40px;
+                margin-left: 300px;
+                margin-right: 300px;
+                margin-bottom: 100px;
+                transition: 0.5s;
+            }
+            .pro:hover{
+                border: 4px solid aqua;
+                padding: 50px;
+                margin-left: 300px;
+                margin-right: 300px;
+                margin-bottom: 100px;
+            }           
+            .pro h2{
+                color: #ffffff;
+            }
+            .pro h2 u{
+                color: #fff;
+                transition: 1.0s;
+            }
+            .pro h2 u:hover{
+                color: #00cccc;
+            }
+            .pro p span{
+                color: #ffffff;
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            .pro p{
+                color: #ffffff;
+                font-family: sans-serif;
+            }
+            #d1 button {
+            background-color: #ffffff;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+            }
+            #d1 button:hover {
+            background-color: #00cccc;
+            }
+            .gtc {
+            border: 1px solid #00ffff;
+            padding: 30px;
+            border-radius: 15px;
+            margin-left: 580px;
+            box-shadow: 0 0 15px #00ffff;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            width: 320px;
+            }
+            .gtc h1 {
+            color: #fff;
+            margin-bottom: 20px;
+            }
+            .gtc input[type="email"],
+            .gtc input[type="number"],
+            .gtc input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            }
+            .gtc input::placeholder {
+            color: #999;
+            }
+            .gtc button[type="submit"] {
+            background-color: #00ffff;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+            }
+            .gtc button[type="submit"]:hover {
+            background-color: #00cccc;
+            }
+            </style>
+        <div class="log">
+            <nav>
+                <h1>SAMEERSHAIK </h1>
+                <ul>
+                    <li class="hov1"><a href>HOME</a></li>
+                    <li class="hov1"><a href>ABOUT</a></li>
+                    <li class="hov1"><a href>SKILLS</a></li>
+                    <li class="hov1"><a href>INTRESTS</a></li>
+                    <li class="hov1"><a href="#contactsec">CONTACT</a></li>
+
+                </ul>
+            </nav>
+        </div>  
+        <hr style="color: aqua;">    
+        <div class="bg">
+            <h1 style="color: white;">Hi I'm <span >SAMEER</span> <br>a web Devoloper</h1>
+            <img src="images/mybg.jpg">
+        </div>
+        <div class="abt">
+            <h2>About me:</h2>
+            <p style="color: white;">Dedicated and highly motivated final year B.Tech student with a strong foundation in Annamacharya 
+                Institute of technology and sciences and hands-on experience in Internships . Demonstrates a solid 
+                understanding of engineering principles, problem-solving abilities.Proven ability to work effectively in team 
+                settings, manage projects, and deliver results under tight deadlines</p>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div class="edu">
+            <h2>My Education:</h2>
+            <ul>
+                <li id="e1">ANNAMACHARYA INSTITUTE OF TECHNOLOGY AND SCIENCES-RAJAMPET <br>
+                    Btech,CSE 4th year pursuing-7.74 CGPA (2021-2025)</li><br>
+                <li id="e1">SRINALANDA JUNIOR COLLEGE-RAJAMPET <br>
+                    Intermediate,MPC-91.8% (2019-2021)</li><br>
+                <li id="e1">NARAYANA GROUP OF SCHOOLS-RAJAMPET <br>
+                    High school-10 CGPA (2018-2019)</li><br>
+            </ul>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div class="skill">
+            <h2>Skills :</h2>
+            <ul>
+                <li id="s1"><h3>Programming Languages: <span>Basics in Python</span></h3></li>
+                <li id="s1"><h3>Database: <span>Basics in MySQL</span></h3></li>
+                <li id="s1"><h3>Web Technologies: <span>HTML & CSS</span></h3></li>
+            </ul>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <h1 id="i2" align="center"><u>Interships and Certificates</u></h1>
+        <div class="intern">
+            <div>
+                <p id="c1" style="color: white;"><a href="certificates/cybersecurity.pdf"><button>View certificate</button></a></p>
+            </div>
+            <div>
+                <p id="c2" style="color: white;"><a href="certificates/cybersecurity.pdf"><button>View certificate</button></a></p>
+            </div>
+            <div>
+                <p id="c3" style="color: white;"><a href="certificates/cybersecurity.pdf"><button>View certificate</button></a></p>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="pro">
+            <h2 align="center"><u>My Projects</u></h2>
+            <p align="center"><span>Face Generation -</span>"Deep Learning Based Text-to-Image synthesis for Criminal Face Generation"<br></p>
+            <p id="d1" align="center"><a href="certificates/projectdoc.docx"><button>View Document</button></a></p>
+        </div>
+        <br>
+        <div id="Contactsec" class="cont">
+            <a href="https://www.googlemail.com/shaiksameershaik99"><img src="images/email.jpeg" ></a>
+            <a href="https://wa.me/7995440100"><img src="images/wa.png" ></a>
+            <a href="https://www.linkedin.com/in/sameer-shaik-495ab726a"><img src="images/link.png"></a>
+            <a href="https://github.com/Sameershaik25"><img src="images/gith.png" ></a>
+            <a href="https://www.instagram.com/_s4_meer_"><img src="images/ig.png"></a>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div class="gtc">
+            <h1>Get In Touch</h1>
+            <input id="em" type="email" name="" placeholder="Enter email" required><br>
+            <input id="num" type="number" name="" placeholder="Enter Number" required><br>
+            <input id="txt" type="text" name="" placeholder="Description" required><br>
+            <button type="submit" >Submit</button>
+        </div>
+        <br><br><br><br><br>
+    </body>
+</html>
